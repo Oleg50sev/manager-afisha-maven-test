@@ -1,10 +1,12 @@
 package ru.netology.manager;
 
+import ru.netology.domain.FilmItem;
+
 public class AfishaManager {
 
     private int countFilms; // количество выводимых фильмов
 
-    private FilmItem[] items = new FilmItem[countFilms];// создание пустого массива
+    private FilmItem[] items = new FilmItem[0];// создание пустого массива
 
     public AfishaManager(int countFilms) { // конструктор с количеством выводимых фильмов пользователем
         this.countFilms = countFilms;
@@ -12,7 +14,7 @@ public class AfishaManager {
 
     public AfishaManager() { // конструктор с количеством выводимых фильмов по умолчанию (10)
         this.countFilms = 10;
-    }
+    } // конструктор с кол. выводимых фильмов по умолчанию
 
 
     public void addFilm(FilmItem item) {
